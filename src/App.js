@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from "react";
+import hello from "./examples/Effect.jsx";
+import UseStateEx from "./examples/State.jsx";
+import UseEffectEx from "./examples/Effect.jsx";
+import UseRefEx from "./examples/Ref.jsx";
+import Memo from "./examples/Memo.jsx";
+import Callback from "./examples/Callback.jsx";
+import Main from "./main.jsx";
+import Alert from "./alert.jsx";
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Alert/>
+      <Main/>
+      
     </div>
   );
 }
